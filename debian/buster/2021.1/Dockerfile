@@ -1,4 +1,4 @@
-FROM vlrpi/rpi-jdk11:debian-bullseye
+FROM vlrpi/rpi-jdk11:debian-buster
 LABEL maintainer="Vova Lantsov"
 LABEL contact_email="contact@vova-lantsov.dev"
 LABEL telegram="https://t.me/vova_lantsov"
