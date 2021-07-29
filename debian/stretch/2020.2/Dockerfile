@@ -3,7 +3,7 @@ LABEL maintainer="Vova Lantsov"
 LABEL contact_email="contact@vova-lantsov.dev"
 LABEL telegram="https://t.me/vova_lantsov"
 
-COPY --from=vlrpi/cache:teamcity /teamcity/2020.2 .
+COPY cache/teamcity/2020.2 .
 
 EXPOSE 8111 9090
 
