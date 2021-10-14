@@ -1,4 +1,6 @@
-FROM vlrpi/rpi-jdk11:ubuntu-focal
+﻿ARG BASE_ARCH
+
+FROM vlrpi/jdk-${BASE_ARCH}:ubuntu-focal
 LABEL maintainer="Vova Lantsov"
 LABEL contact_email="contact@vova-lantsov.dev"
 LABEL telegram="https://t.me/vova_lantsov"

@@ -1,4 +1,6 @@
-FROM vlrpi/rpi-jdk11:debian-bullseye
+﻿ARG BASE_ARCH
+
+FROM vlrpi/jdk-${BASE_ARCH}:debian-bullseye
 LABEL maintainer="Vova Lantsov"
 LABEL contact_email="contact@vova-lantsov.dev"
 LABEL telegram="https://t.me/vova_lantsov"
