@@ -15,7 +15,7 @@ RUN curl -SL --output TeamCity.tar.gz https://download.jetbrains.com/teamcity/Te
     tar -xzf TeamCity.tar.gz -C /teamcity/2021.1 && \
     rm TeamCity.tar.gz
 
-RUN curl -SL --output TeamCity.tar.gz https://download.jetbrains.com/teamcity/TeamCity-2021.2.tar.gz && \
+RUN curl -SL --output TeamCity.tar.gz https://download.jetbrains.com/teamcity/TeamCity-2021.2.1.tar.gz && \
     mkdir 2021.2 && \
     tar -xzf TeamCity.tar.gz -C /teamcity/2021.2 && \
     rm TeamCity.tar.gz
