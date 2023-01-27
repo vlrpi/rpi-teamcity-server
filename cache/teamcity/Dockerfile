@@ -5,17 +5,17 @@ RUN apk add --update curl && \
 
 WORKDIR /teamcity
 
-RUN curl -SL --output TeamCity.tar.gz https://download.jetbrains.com/teamcity/TeamCity-2020.2.4.tar.gz && \
-    mkdir 2020.2 && \
-    tar -xzf TeamCity.tar.gz -C /teamcity/2020.2 && \
-    rm TeamCity.tar.gz
-
-RUN curl -SL --output TeamCity.tar.gz https://download.jetbrains.com/teamcity/TeamCity-2021.1.4.tar.gz && \
-    mkdir 2021.1 && \
-    tar -xzf TeamCity.tar.gz -C /teamcity/2021.1 && \
-    rm TeamCity.tar.gz
-
 RUN curl -SL --output TeamCity.tar.gz https://download.jetbrains.com/teamcity/TeamCity-2021.2.3.tar.gz && \
     mkdir 2021.2 && \
     tar -xzf TeamCity.tar.gz -C /teamcity/2021.2 && \
+    rm TeamCity.tar.gz
+
+RUN curl -SL --output TeamCity.tar.gz https://download.jetbrains.com/teamcity/TeamCity-2022.04.4.tar.gz && \
+    mkdir 2022.04 && \
+    tar -xzf TeamCity.tar.gz -C /teamcity/2022.04 && \
+    rm TeamCity.tar.gz
+
+RUN curl -SL --output TeamCity.tar.gz https://download.jetbrains.com/teamcity/TeamCity-2022.10.1.tar.gz && \
+    mkdir 2022.10 && \
+    tar -xzf TeamCity.tar.gz -C /teamcity/2022.10 && \
     rm TeamCity.tar.gz
