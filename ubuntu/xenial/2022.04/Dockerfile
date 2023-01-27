@@ -1,11 +1,11 @@
 ﻿ARG BASE_ARCH
 
-FROM vlrpi/jdk-${BASE_ARCH}:ubuntu-focal
+FROM vlrpi/jdk-${BASE_ARCH}:ubuntu-xenial
 LABEL maintainer="Vova Lantsov"
 LABEL contact_email="contact@vova-lantsov.dev"
 LABEL telegram="https://t.me/vova_lantsov"
 
-COPY cache/teamcity/2021.1 .
+COPY cache/teamcity/2022.04 .
 
 EXPOSE 8111 9090
 
