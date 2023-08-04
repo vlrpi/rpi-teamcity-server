@@ -1,11 +1,11 @@
 ﻿ARG BASE_ARCH
 
-FROM vlrpi/jdk-${BASE_ARCH}:ubuntu-xenial
+FROM vlrpi/jdk-${BASE_ARCH}:debian-bullseye
 LABEL maintainer="Vova Lantsov"
 LABEL contact_email="contact@vova-lantsov.dev"
 LABEL telegram="https://t.me/vova_lantsov"
 
-COPY cache/teamcity/2022.10 .
+COPY cache/teamcity/2023.05 .
 
 EXPOSE 8111 9090
 

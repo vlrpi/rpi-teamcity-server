@@ -1,6 +1,6 @@
 ﻿ARG BASE_ARCH
 
-FROM vlrpi/jdk-${BASE_ARCH}:ubuntu-xenial
+FROM vlrpi/jdk-${BASE_ARCH}:debian-bookworm
 LABEL maintainer="Vova Lantsov"
 LABEL contact_email="contact@vova-lantsov.dev"
 LABEL telegram="https://t.me/vova_lantsov"
